@@ -21,4 +21,13 @@
     color: floralwhite;
     border-color: floralwhite;
     border-style: solid;}
-
+#cannotDisplay{border-style: solid;
+    color: floralwhite;
+    border-color: floralwhite;
+    border-style: solid;
+    height: 712px;
+    width: 1068px;}
+#dimension{
+    max-height:inherit ;
+    max-width:inherit ;
+}
