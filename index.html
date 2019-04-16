@@ -12,12 +12,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
     <title>Group Portfolio Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   </head>
   <body>
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid header">
       <div class="container-fluid">
       <h1>Group Portfolio</h1>      
-      <p>Amber Imperiale, Jenna Kauzlarich, Danielle Stevenson</p>
+      <p id="names">Amber Imperiale, Jenna Kauzlarich, Danielle Stevenson</p>
       </div>      
       </div>
       
@@ -39,12 +40,29 @@
       
       <div class="container">
       <div class="row">
-          <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary">Amber's Portfolio</button></div>
-      <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary"> Jenna's Portfolio</button></div>
-      <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary">Danielle's Portfolio</button></div>
+          <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary">View Portfolio</button></div>
+      <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary"> View Portfolio</button></div>
+      <div class="col-4 about"><button onclick="window.location.href = 'amber.html';" type="button" class="btn btn-outline-secondary">View Portfolio</button></div>
       </div>
       </div>
       
+  <div class="d-flex mb-3 parent">
+    <div class=" flex-fill  child">Flex item 1</div>
+    <div class=" flex-fill  child">Flex item 2</div>
+    <div class=" flex-fill  child">Flex item 3</div>
+  </div>
+      
+<footer>
+<div class="d-flex parent">
+<div class="bg-info flex-fill child1"><img src="northwest.jpg" class="rounded" alt="northwest logo" width="150" height="150">Northwest Missouri State University offers a wide variety of majors</div>
+<div class="bg-info flex-fill child2">Flex item 2</div>
+</div>
+<style>
+img {
+float: left;
+}
+</style>
+</footer>
       
       
       
