@@ -1,10 +1,6 @@
 
 .about {
-    text-align: center;
-    
-    
-}
-
+    text-align: center;}
 #csisds{background-color: lightpink;
     color: floralwhite;
     border-color: floralwhite;
@@ -21,4 +17,17 @@
     color: floralwhite;
     border-color: floralwhite;
     border-style: solid;}
-
+.container{align-content: center;}
+/* footer css */
+.parent{
+    margin-top: 100px;
+}
+.child1{
+    height: 200px;
+    text-align: left;
+    
+    
+}
+.northwest{
+    padding: 1%;
+}
