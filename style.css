@@ -25,10 +25,10 @@
     margin-top: 100px;
 }
 .child1{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;}
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: .5%;
+    padding-right: .5%;}
 .parent{margin-top:100px;
 }
 .child{height: 200px;
@@ -51,3 +51,9 @@
 .body {
     background: grey;
 }
+
+
+
+
+
+/* Amber's CSS */
