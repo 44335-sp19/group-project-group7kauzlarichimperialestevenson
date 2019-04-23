@@ -17,8 +17,8 @@
     color: floralwhite;
     border-color: floralwhite;
     border-style: solid;}
-.container{align-content: center;}
-.row {padding: 1.5%}
+.chome{align-content: center;}
+.rowpad {padding: 1.5%}
 
 /* footer css */
 .parent{
@@ -51,3 +51,19 @@
 .body {
     background: grey;
 }
+
+/* Jenna css */
+.pics {
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+
+
+
+
