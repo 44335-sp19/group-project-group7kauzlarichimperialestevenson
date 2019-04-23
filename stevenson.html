@@ -29,10 +29,10 @@
         </ul>
           <nav><a class="nav-link" href ="index.html">Back to Home -></a></nav>
        </div>
-        <div class="tab-content" style="background-color: lightpink; color: floralwhite; border-color: floralwhite; border-style: solid;">
-            <div id="aboutds" class="container tab-pane">
-                <h3>About</h3>
-                <div style="border-color: floralwhite; border-style: solid; width: 40%; list-style: circle; margin: 0,0,0,px;">
+        
+            <div id="aboutds" class="container-fluid tab-pane" style="margin-left: 5%">
+                <h3 style="margin-left:40%">About</h3>
+                <div style="border-color: floralwhite; border-style: solid; width: 40%; list-style: circle; margin: 0,0,0,0%; float:left">
                     <ul>
                         <li>Born: 8/19/1998</li>
                         <li>GPA: </li>
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 
-                <div id="aboutpics" class="carousel slide" data-ride="carousel">
+                <div id="aboutpics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: floralwhite; border-style: solid; height=535px;">
                     <ul class="carousel-indicators">
                         <li data-target="#aboutpics" data-slide-to="0" class="active"></li>
                         <li data-target="#aboutpics" data-slide-to="1"></li>
@@ -50,59 +50,57 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/Me&Dad.JPG" style="height: 1068px; width: 712px; margin: 0 0 0 19%" title="My father reading me a book at 18 months" alt="Cannot Display Image">
+                        <img src="images/Me&Dad.JPG" style="height: 534px; width: 356px; margin: 0 0 0 23%" title="My father reading me a book at 18 months" alt="Cannot Display Image">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/me.JPG" style="height: 712px; width: 1068px; margin: 10px 0 0 2%; transform: rotate(270deg)" title="Selfie with digital camera" alt="Cannot Display Image">
+                        <img src="images/me.JPG" style="height: 356px; width: 534px; margin: 0 0 0 9%; transform: rotate(270deg)" title="Selfie with digital camera" alt="Cannot Display Image">
+                    </div>
+                </div>
+                    
+                <a class="carousel-control-prev" href="#aboutpics" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#aboutpics" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+                </div>
+
+            </div>
+            
+            <div id="csids" class="container-fluid tab-pane">
+                <div id="csispics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: floralwhite; border-style: solid; height=100%">
+                    <ul class="carousel-indicators">
+                        <li data-target="#aboutpics" data-slide-to="0" class="active"></li>
+                        <li data-target="#aboutpics" data-slide-to="1"></li>
+                        <li data-target="#aboutpics" data-slide-to="2"></li>
+                    </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/ManualEdit2.JPG" style="height: 356px; width: 534px; margin-left: 9%" title="trees and bench overlooking a frozen lake on sunny day" alt="Cannot Display Image">
                     </div>
                     <div class="carousel-item">
-                        <video width="1066" height="712" style="margin-left: 5%" controls>
-                            <source src="images/DSElevatorPitch.mp4" type="video/mp4"  title="Elevator Pitch Fall 2018">
+                        <img src="images/nwskyline.JPG" style="height: 356px; width: 534px; margin-left: 9%" title="sunrise skyline of nwmsu admin building" alt="Cannot Display Image">
+                    </div>
+                    <div class="carousel-item">
+                        <video width="534" height="356" style="margin-left: 9%" title="Elevator Pitch Fall 2018" alt="Cannot Display Video" controls>
+                            <source src="images/DSElevatorPitch.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                     
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <a class="carousel-control-prev" href="#csispics" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <a class="carousel-control-next" href="#csispics" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
 
-                </div>
-                <div>
-                    <h2>Hello!</h2>
-                </div>
-            </div>
-            
-            <div id="csids" class="container tab-pane">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/ManualEdit2.JPG" style="height: 712px; width: 1068px" title/alt="trees and bench overlooking a frozen lake on sunny day">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/nwskyline.JPG" style="height: 712px; width: 1068px" title/alt="sunrise skyline of nwmsu admin building">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/.jpg" style="height: 712px; width: 1068px" title/alt="Me">
-                    </div>
-                </div>
-                    
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
-                </div>
-                <div>
-                    <h2>Hello!</h2>
                 </div>
             </div>
             
             <div id="english" class="container tab-pane">
-                <h3>Works</h3>  
+                  <h3>Published Works</h3>
             </div>
   </body>
   <footer></footer>
