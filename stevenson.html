@@ -13,35 +13,38 @@
     <script></script>
     <title>Module 5 Project</title>
   </head>
-  <body style="background-color: lightpink; color: floralwhite">
-      <script></script>
-      <div class= container style="background-color: lightpink; color: floralwhite; border-color: floralwhite; border-style: solid;">
-        <ul class="nav nav-tabs">
+  <body>
+      <div class="jumbotron jumbotron-fluid header" style="color:white;background-color: #17A2B8;text-align: center;font-family: sans-serif">
+      <div class="container-fluid" >
+      <h1>Danielle Stevenson</h1>      
+      <p id="names">Majors: CSIS: IDM, English: Creative Writing</p>
+      </div>      
+      </div>
+      <div class= container style="background-color: #17A2B8; color: white; border-color: white; border-style: solid;">
+        <ul class="nav nav-tabs" >
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href ="#aboutds">About</a>
+                <a class="nav-link active" data-toggle="tab" id="aboutbutt" href ="#aboutds" style="color: white;">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href ="#csisds">CSIS:IDM</a>
+                <a class="nav-link" data-toggle="tab" id="csisbutt" href ="#csisds" style="color: white;">CSIS:IDM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href ="#english">English</a>
+                <a class="nav-link" data-toggle="tab" id="englishbutt" href ="#english" style="color: white;">English</a>
             </li>
         </ul>
           <nav><a class="nav-link" href ="index.html">Back to Home -></a></nav>
        </div>
-        
-            <div id="aboutds" class="container-fluid tab-pane" style="margin-left: 5%">
+        <div class="tab-content">
+            <div id="aboutds" class="container-fluid tab-pane active" style="margin-left: 5%">
                 <h3 style="margin-left:40%">About</h3>
-                <div style="border-color: floralwhite; border-style: solid; width: 40%; list-style: circle; margin: 0,0,0,0%; float:left">
+                <div style="background-color: #17A2B8; border-color: white; border-style: solid; width: 40%; list-style: circle; margin: 0,0,0,0%; float:left">
                     <ul>
                         <li>Born: 8/19/1998</li>
                         <li>GPA: </li>
-                        <li>Degrees:</li>
-                        <li>Majors:</li>
                     </ul>
                 </div>
                 
-                <div id="aboutpics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: floralwhite; border-style: solid; height=535px;">
+                <div id="aboutpics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: white; background-color: #17A2B8;border-style: solid; height=535px;">
                     <ul class="carousel-indicators">
                         <li data-target="#aboutpics" data-slide-to="0" class="active"></li>
                         <li data-target="#aboutpics" data-slide-to="1"></li>
@@ -49,7 +52,7 @@
                     </ul>
 
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" id="about1">
                         <img src="images/Me&Dad.JPG" style="height: 534px; width: 356px; margin: 0 0 0 23%; padding: 5px 0 5px 0" title="My father reading me a book at 18 months" alt="Cannot Display Image">
                     </div>
                     <div class="carousel-item">
@@ -68,15 +71,27 @@
 
             </div>
             
-            <div id="csids" class="container-fluid tab-pane">
-                <div id="csispics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: floralwhite; border-style: solid; height=100%">
+            <div id="csisds" class="container-fluid tab-pane disabled">
+                <h3 style="margin-left:40%">CSIS: IDM</h3>
+                <div style="background-color: #17A2B8; border-color: white; border-style: solid; width: 40%; list-style: circle; margin-left: 5%; float:left">
+                    <ul>
+                        <li>Languages: Java, HTML, JavaScript, JQuery, Python</li>
+                        <li>Participates in programming contests</li>
+                        <li>Team placed 3rd at 2018 hosted by Garmin</li>
+                        <li>Developed websites for clients</li>
+                        <li>Proficiency in Adobe products such as Illustrator, Photoshop, and InDesign</li>
+                        <li>All pictures/videos on this page taken and edited by me.</li>
+                    </ul>
+                </div>
+                <div id="csispics" class="carousel slide" data-ride="carousel" style="background-color: #17A2B8; width: 50%; float:left;  border-color: white; border-style: solid; height=100%">
+                    
                     <ul class="carousel-indicators">
                         <li data-target="#aboutpics" data-slide-to="0" class="active"></li>
                         <li data-target="#aboutpics" data-slide-to="1"></li>
                         <li data-target="#aboutpics" data-slide-to="2"></li>
                     </ul>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" id="csis1">
                         <img src="images/ManualEdit2.JPG" style="height: 356px; width: 534px; margin-left: 9%; padding: 5px 0 5px 0" title="trees and bench overlooking a frozen lake on sunny day" alt="Cannot Display Image">
                     </div>
                     <div class="carousel-item">
@@ -99,9 +114,105 @@
                 </div>
             </div>
             
-            <div id="english" class="container tab-pane">
-                  <h3>Published Works</h3>
+            <div id="english" class="container tab-pane disabled">
+                <div style="border-color: floralwhite; border-style: solid; width: 100%; list-style: circle; margin: 0,0,0,0%; float:left">
+                    <h2>Published Works</h2>
+                    <ul>
+                        <h3>Medium Weight Forks 2019</h3>
+                        <li>"I Can See the End" - poem</li>
+                        <li>"I Used to Draw Roads in my Backyard with Chalk" - poem</li>
+                        <li>"Girl in Coffee Dates" - poem</li>
+                        <li>"The Lion President" - poem</li>
+                    </ul>
+                    
+                </div>
+                <div style="border-color: floralwhite; border-style: solid; width: 100%; list-style: circle; margin: 0,0,0,0%; float:left">
+                    <h2>Other Works</h2>
+                    <ul>
+                        <h3></h3>
+                        <li>"Allegory" - flash fiction</li>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click to Read</button>
+
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content" style = "color:black">
+                            <div class="modal-header">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                            <h4 class="modal-title">Allegory</h4>
+                            </div>
+                                <div class="modal-body">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A hammer, one day, was discussing with the screwdriver the very best way to secure the screw in the board. “If you just used more force,” suggested the hammer, “You would surely be finished much quicker.” <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A penguin, one day, spoke to the woodpecker of flight. “If you move your wings like this,” the penguin moved in what seemed to the woodpecker a ridiculous fashion, “You could have more control over direction.”<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The doll, one day, spoke to the Hotwheel™ about his performance that day. “You need to pick up more speed when you go for the loop,” the doll smiled at her own cleverness before continuing. “Or else you would simply fall onto your back.” <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The jester, one day, advised the King on the proper ruling of his subjects. “The people want more gold,” the jester began, “If you were to provide them with what they desire they would love you.” <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The King, that same day, replied to the jester’s idea. “Of course the people wish for opulence,” the King paused considering his next words carefully. “They also wish for humor, perhaps you should focus on giving them that.”</p>
+                                </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <li>"Running Through Rain" - creative nonfiction</li>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Click to Read</button>
+
+                        <!-- Modal -->
+                        <div id="myModal2" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content" style = "color:black">
+                            <div class="modal-header">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                            <h4 class="modal-title">Running Through Rain</h4>
+                            </div>
+                                <div class="modal-body">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ever since I was little I loved to run. I didn’t care why- mile run, pacer test, kick-back in the back yard on a lazy summer evening-when we stay out till the streetlights come on and the crickets start to buzz. There is nothing greater than the wind in one’s hair and being alone with one’s thoughts- or not thinking at all, just moving forward for the sake of moving forward.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I was in eighth grade, I was in track. Track meets began in the afternoon. We would leave our last class early and rush to change in the locker rooms. It was usually sunny in the spring, but one particular day the sky was covered in a layer of thick gray fluff that turned amongst itself. That, along with the black track and dark grass on the football field, made the teams all stand out in bright uniforms- Porcupine Coast Middle School’s was a vivid admiral blue. The shorts were short and so were the sleeves. That didn’t mix well with the cooler spring weather, so most of the team eventually put on their indigo sweatpants and gray hoodies.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I rarely ever watched all the races. We never won anyway, and watching us fail over and over made me feel impuissant. I would escape into a good book that made my life seem easy by comparison. While I was reading, it started to rain, not a sprinkle, but not a downpour either. I took refuge under an overhanging roof, swaddled in my hoodie to wait for my race.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I pulled a yellow apple out of my backpack to earn some carbs. It had numerous, light brown bruises scattered all over it and it was soft and mushy- its signature apple ‘crunch’ was more of a ‘snap’ when I broke through the membrane. Most people don’t eat apples that are bruised and soft; they go for the shiny red ones that I always found dry, and tasting of dirt (not that I had ever eaten dirt, but red apples were what I imagined dirt would taste like). The fruit- I found- was best when it had seen better (easier) days. In its older state it was juicier and offered a sweeter flavor that could only be earned by a day or so of neglect on a kitchen counter and a few bumps against the contents of my school bag.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sixteen hundred meter (one mile) race was the last event to be run at every meet. Four grueling laps around the track. It was almost ten by the time it came to the last race. Reluctantly, I stripped off my armor from the weather. Instantly I was cold, and when I reached my starting position I was shivering uncontrollably. The raindrops were of medium size- big enough that I couldn’t see out of my glasses so I left them with my jacket. I couldn’t see much better without them- I could see the ground, but the farther out the more blurred the world became. The football field lights blared white, a haze of mist surrounding them. They harshly lit the corners, but the rest of the world was unknown to them.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I bent my legs- which were still shaking with the cold. I clenched my mouth shut and waited. The gunshot broke the air and I was born to the track. I ran. I ran. One foot then the next. The crowd was in the background, but I didn’t pay any attention to it. People passed me and I passed others. Sometimes people would run faster when I came close to their tail- unwilling to let me take what little position they had without a fight. I did the same thing, but eventually I would sneak around them and push ahead- bolstered by my fresh victory. The air smelled clean and the way was clear.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The only sound was the labored breaths of myself and of anyone I ran close to. My skin was slick with water and perspiration. By this point in the game we were all pretty spread out. I didn’t look straight ahead. Wouldn’t do much good- I was blind, lost, and cold. I watched my feet. One foot, then the next. I was tiring and my breaths came in gulps. My chest shook with the struggle of it.<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;I felt my darkened, wet hair flop on the back of my neck to the steady beat of my movement. I repeated every mantra from my coach in my head to keep from slowing down. “Pain is weakness leaving the body.” My legs burned, but they were freezing. I couldn’t feel the tips of my ears, but I think I was sweating- could’ve been the rain, which had soaked everyone on the field. My body was cold from weakness, but it burned to continue. The wind, which had so forcefully pushed me forward as I ran on the other side, now worked against me, whipping my face numb and pressing me to go back.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I didn’t stop, though. “Don’t stop when you know there will be an end.” One hundred meters to blessed rest. One hundred meters from the finish line I was cold, soaked, blind, and far from first place. I pushed myself faster- faster than I had gone the whole race. I lost, of course, (any chance I had at winning was killed when the first fifteen people crossed the finish line), but I decided that,  in that ephemeral moment, I was at my strongest. The greatest achievement of my school sports career wasn’t my participation medal or the time I won a tennis match while wearing purple tights. It was when I ran head first into the black night with water falling from the sky and weakness, leaving shivers of cold on my skin as I burned it from my core.</p>
+                                </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <li>"Dream Catcher" - poem</li>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Click to Read</button>
+                            <div id="myModal3" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content"style = "color:black">
+                            <div class="modal-header">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                            <h4 class="modal-title">"Dream Catcher" -flash fiction</h4>
+                            </div>
+                                <div class="modal-body" >
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It happens every new moon, when the sky is pitch black, empty of all but the tiniest glimmers of stars (or airplane more likely). You see, dreams fill the air, they charge it. Dream catchers act as filters, capturing negativity and preventing it from affecting the lives of the humans who happen to enter the space where someone has once dreamt. Dream catchers, like all filters, have to be cleared every so often or else they lose effectiveness.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through the window, though you can barely see it with the aid of the street light, is a dream catcher. A shadow of smoke flickers for a moment. Then it appears, a creature of glowing light. This one is a baby blue, but these creatures come in many colors- different shades of white, yellow, pink, green, even purple. It’s vaguely humanoid. It has long thin arms that end in three thick fingers with pointed nails. The creature has no distinguishable toes on its feet. Its two tails seem to float like ribbons behind it, flowing the direction of the open window. Its face is currently emotionless, staring at the dream catcher with empty sockets. It reaches out an arm that is covered in black, like mold growing on a piece of bread. Darkness seeps out of the dream catcher like tears which are caught by the creature. The mold on its arm grows, covering slightly- but noticeably- more of its luminescent skin.<br> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;As it leaves, you follow it. It stops very suddenly and stares emptily at something in front of it. It moves to go around, giving a wide berth to the subject you just notice. A group of five of the creatures stand in the abandoned road, hovering above the black asphalt in a circle. Another enters the group, but you hadn’t noticed it before. They are all completely dark, giving them an eerie look. The dark beings are attracted to one another. They exist only to cause tragedy- to emit the darkness of nightmares on all mortal things that dream. The more that converge in an area the worse the effect. A light shines from in front of them- headlights. The creatures make no move to avoid the collision. The car is driving faster than it should in a residential area, but when it reaches the creatures, it passes right through them and they disappear as if they were never there.  The car, which had been fine moments before, swerves and hits a tree. The driver doesn’t move.</p>
+                                </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                    </ul>
+                </div>       
             </div>
+        </div>
+      <script>
+          $(document).ready(function(){
+			//Give the orb element an onclick event that will:
+			//Check to see if it hasClass called sun. If it's sun, remove sun
+			//and add moon, and vice versa.
+                $("nav-item").click(function(){
+                    if($(this).hasClass("active")){
+                        $(this).css = background-color:white, ;
+                    }
+                    else{
+                        $(this).removeClass("moon").addClass("sun");
+                    }
+
+      </script>
   </body>
   <footer></footer>
 </html>
