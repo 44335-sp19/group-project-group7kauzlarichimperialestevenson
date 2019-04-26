@@ -20,16 +20,16 @@
       <p id="names">Majors: CSIS: IDM, English: Creative Writing</p>
       </div>      
       </div>
-      <div class= container style="background-color: #17A2B8; color: white; border-color: white; border-style: solid;">
+      <div class= container >
         <ul class="nav nav-tabs" >
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" id="aboutbutt" href ="#aboutds" style="color: white;">About</a>
+                <a class="nav-link active" data-toggle="tab" id="aboutbutt" href ="#aboutds" >About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" id="csisbutt" href ="#csisds" style="color: white;">CSIS:IDM</a>
+                <a class="nav-link" data-toggle="tab" id="csisbutt" href ="#csisds" >CSIS:IDM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" id="englishbutt" href ="#english" style="color: white;">English</a>
+                <a class="nav-link" data-toggle="tab" id="englishbutt" href ="#english" >English</a>
             </li>
         </ul>
           <nav><a class="nav-link" href ="index.html">Back to Home -></a></nav>
@@ -37,14 +37,14 @@
         <div class="tab-content">
             <div id="aboutds" class="container-fluid tab-pane active" style="margin-left: 5%">
                 <h3 style="margin-left:40%">About</h3>
-                <div style="background-color: #17A2B8; border-color: white; border-style: solid; width: 40%; list-style: circle; margin: 0,0,0,0%; float:left">
+                <div style=" width: 40%; list-style: circle; margin: 0,0,0,0%; float:left">
                     <ul>
-                        <li>Born: 8/19/1998</li>
-                        <li>GPA: </li>
+                        <li>Age: 20</li>
+                        <li> </li>
                     </ul>
                 </div>
                 
-                <div id="aboutpics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left;  border-color: white; background-color: #17A2B8;border-style: solid; height=535px;">
+                <div id="aboutpics" class="carousel slide" data-ride="carousel" style="width: 50%; float:left; background-color: #17A2B8; height=535px">
                     <ul class="carousel-indicators">
                         <li data-target="#aboutpics" data-slide-to="0" class="active"></li>
                         <li data-target="#aboutpics" data-slide-to="1"></li>
@@ -57,6 +57,9 @@
                     </div>
                     <div class="carousel-item">
                         <img src="images/me.JPG" style="height: 356px; width: 534px; margin: 0 0 0 9%; padding: 5px 0 5px 0; transform: rotate(270deg)" title="Selfie with digital camera" alt="Cannot Display Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/PumpkinPieHat%20(2).jpeg" style="height: 622px; width: 520px; margin: 0 0 0 10.5%" title="Me" alt="Cannot Display Image">
                     </div>
                 </div>
                     
@@ -201,17 +204,21 @@
         </div>
       <script>
           $(document).ready(function(){
-			//Give the orb element an onclick event that will:
-			//Check to see if it hasClass called sun. If it's sun, remove sun
-			//and add moon, and vice versa.
-                $("nav-item").click(function(){
-                    if($(this).hasClass("active")){
-                        $(this).css = background-color:white, ;
-                    }
-                    else{
-                        $(this).removeClass("moon").addClass("sun");
-                    }
-
+                $("#aboutbutt").onfocus(function(){
+                    $(this).css = color, "#17A2B8": background-color, "white";
+                    $("#csisbutt").css = color: "white", background-color: "#17A2B8";
+                    $("#englishbutt").css = color: "white", background-color: "#17A2B8";
+                };
+                $("#csisbutt").click(function(){
+                    $(this).css = color: "#17A2B8", background-color: "white";
+                    $("#aboutbutt").css = color: "white", background-color: "#17A2B8";
+                    $("#englishbutt").css = color: "white", background-color: "#17A2B8";
+                };
+                $("#englishbutt").click(function(){
+                    $(this).css = color: "#17A2B8", background-color: "white";
+                    $("#csisbutt").css = color: "white", background-color: "#17A2B8";
+                    $("#aboutbutt").css = color: "white", background-color: "#17A2B8";
+                };
       </script>
   </body>
   <footer></footer>
