@@ -45,7 +45,7 @@
         color: white;
 }
 
-#names {font-family: "Rubik"
+#names {font-family: "Rubik";
     
 }
 .body {
@@ -66,8 +66,15 @@
 #foot{
     padding-top:5%;
 }
-
-
+.aboutme{
+    margin-left:15%;
+    margin-right:15%;
+}
+.view{
+    display:block;
+    margin:auto;
+    margin-top:3%;
+}
 
 
 
@@ -85,7 +92,7 @@
     padding-left: 9%;
 }
 
-.img-fluid {
+.img-fluid1 {
     padding: 2%;
       display: block;
   margin-left: auto;
